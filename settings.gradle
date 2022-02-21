@@ -1,0 +1,3 @@
+rootProject.name = "ApklisPaidChequed"
+include ':app'
+include ':libapklispaidchequed'
