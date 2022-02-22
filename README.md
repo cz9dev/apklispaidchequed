@@ -1,4 +1,4 @@
-# Comprobar si la app ha sido comprada en [Apklis](https://www.apklis.cu/es/)
+# Check app is paid in [Apklis](https://www.apklis.cu/es/)
 [![](https://jitpack.io/v/cz9dev/apklispaidchequed.svg)](https://jitpack.io/#cz9dev/apklispaidchequed)
 
 ### Installing
@@ -19,8 +19,6 @@ allprojects {
 
 ### Usage
 
-* It is necessary to have the Apklis application installed and a section started to check, otherwise the user would be null and the payment would be false.
-
 * Check paid Kotlin
 ```kotlin
     var paidCheked = PaidCheked.isPurchased(this, PACKAGE_ID)
@@ -34,11 +32,11 @@ allprojects {
 
 * Check paid Java
 ```java
-   // Aun  no se ha probado en java, si la pruebas comentame los resultados
+   // It has not been tested in java yet, if you test it tell me the results
 ```
 ### Contributing
-Cualquier contribución a esta librería es bienvenida!!!
-Espero sus comentarios
+Any contribution to this library is welcome!!!
+I await your comments
 
 ### Developers
 [cz9dev](https://github.com/cz9dev)
