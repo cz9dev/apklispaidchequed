@@ -35,8 +35,7 @@ allprojects {
    // It has not been tested in java yet, if you test it tell me the results
 ```
 ### Contributing
-Any contribution to this library is welcome!!!
-I await your comments
+All contributions are welcome!!!
 
 ### Developers
 [cz9dev](https://github.com/cz9dev)
