@@ -3,23 +3,9 @@ buildscript {
     ext.kotlin_version = "1.5.31"
     repositories {
         maven { url "https://jitpack.io" }
-
-        maven {
-            url "http://nexus.prod.uci.cu/repository/maven-all"
-            allowInsecureProtocol = true
-        }
-        maven {
-            url "http://nexus.prod.uci.cu/repository/maven-central"
-            allowInsecureProtocol = true
-        }
-        maven {
-            url "http://nexus.prod.uci.cu/repository/maven.google.com"
-            allowInsecureProtocol = true
-        }
-        maven {
-            url "http://nexus.prod.uci.cu/repository/repo1.maven.org"
-            allowInsecureProtocol = true
-        }
+        maven { url "https://mvnrepository.com/" }
+        maven { url "https://nexus.xebialabs.com/nexus/content/repositories/public" }
+        maven { url "https://repo1.maven.org/maven2" }
         google()
     }
     dependencies {
@@ -34,23 +20,9 @@ buildscript {
 allprojects {
     repositories {
         maven { url "https://jitpack.io" }
-
-        maven {
-            url "http://nexus.prod.uci.cu/repository/maven-all"
-            allowInsecureProtocol = true
-        }
-        maven {
-            url "http://nexus.prod.uci.cu/repository/maven-central"
-            allowInsecureProtocol = true
-        }
-        maven {
-            url "http://nexus.prod.uci.cu/repository/maven.google.com"
-            allowInsecureProtocol = true
-        }
-        maven {
-            url "http://nexus.prod.uci.cu/repository/repo1.maven.org"
-            allowInsecureProtocol = true
-        }
+        maven { url "https://mvnrepository.com/" }
+        maven { url "https://nexus.xebialabs.com/nexus/content/repositories/public" }
+        maven { url "https://repo1.maven.org/maven2" }
         google()
     }
 }
