@@ -1,1 +1,9 @@
 theme: jekyll-theme-midnight
+
+layout: page
+title: "ZIP"
+permalink: https://github.com/cz9dev/apklispaidchequed/archive/refs/tags/1.0.2.zip
+
+layout: page
+title: "TAR"
+permalink: https://github.com/cz9dev/apklispaidchequed/archive/refs/tags/1.0.2.tar.gz
