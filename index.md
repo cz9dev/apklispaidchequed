@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Check app is paid in [Apklis](https://www.apklis.cu/es/)
 [![](https://jitpack.io/v/cz9dev/apklispaidchequed.svg)](https://jitpack.io/#cz9dev/apklispaidchequed)
 
@@ -39,3 +40,9 @@ All contributions are welcome!!!
 
 ### Developers
 [cz9dev](https://github.com/cz9dev)
+=======
+## apklispaidchequed
+
+Liberia para comprobar si la app a sido comprada en apklis
+
+>>>>>>> a29bbd3 (Subiendo archivo index)
