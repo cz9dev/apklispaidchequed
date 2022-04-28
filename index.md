@@ -1,9 +1,11 @@
-<<<<<<< HEAD
 # Check app is paid in [Apklis](https://www.apklis.cu/es/)
+
 [![](https://jitpack.io/v/cz9dev/apklispaidchequed.svg)](https://jitpack.io/#cz9dev/apklispaidchequed)
 
 ### Installing
+
 * Step 1. Add the JitPack repository to your build file
+
 ```groovy
 allprojects {
 	repositories {
@@ -12,15 +14,17 @@ allprojects {
 	}
 }
 ```
-* Step 2. Add the dependency
-```groovy
 
+* Step 2. Add the dependency
+
+```groovy
    implementation 'com.github.cz9dev:apklispaidchequed:$VERSION'
 ```
 
 ### Usage
 
 * Check paid Kotlin
+
 ```kotlin
     var paidCheked = PaidCheked.isPurchased(this, PACKAGE_ID)
     when (paidCheked){
@@ -32,17 +36,15 @@ allprojects {
 ```
 
 * Check paid Java
+
 ```java
    // It has not been tested in java yet, if you test it tell me the results
 ```
+
 ### Contributing
+
 All contributions are welcome!!!
 
 ### Developers
+
 [cz9dev](https://github.com/cz9dev)
-=======
-## apklispaidchequed
-
-Liberia para comprobar si la app a sido comprada en apklis
-
->>>>>>> a29bbd3 (Subiendo archivo index)
