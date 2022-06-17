@@ -13,7 +13,6 @@ allprojects {
 ```
 * Paso 2. Agrega la dependencia
 ```groovy
-
    implementation 'com.github.cz9dev:apklispaidchequed:$VERSION'
 ```
 
@@ -32,7 +31,19 @@ allprojects {
 
 * Cheque pago con Java
 ```java
-   // Aun  no se ha probado en java, si la pruebas comentame los resultados
+    String paidCheked = PaidCheked.Companion.isPurchased(this, PACKAGE_ID);
+    switch (paidCheked) {
+        case "result00":
+            Toast.makeText(this, "El movil no cuenta con la aplicacion Apklis instalada.", Toast.LENGTH_LONG).show();
+        case "result02":
+            Toast.makeText(this, "No se encuentra autenticado en Apklis.", Toast.LENGTH_LONG).show();
+        case "result03":
+            Toast.makeText(this, "Usted no ha comprado la aplicación en Apklis.", Toast.LENGTH_LONG).show();
+        case "result04":
+            Toast.makeText(this, "Compra verificada en Apklis.", Toast.LENGTH_LONG).show();
+        default:
+            Toast.makeText(this, "Puede continuar", Toast.LENGTH_LONG).show();
+    }
 ```
 ### Contribuyendo
 Cualquier contribución a esta librería es bienvenida!!!
