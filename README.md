@@ -31,8 +31,21 @@ allprojects {
 ```
 
 * Check paid Java
+
 ```java
-   // It has not been tested in java yet, if you test it tell me the results
+String paidCheked = PaidCheked.Companion.isPurchased(this, PACKAGE_ID);
+	switch (paidCheked) {
+    	case "result00":
+        	Toast.makeText(this, "El movil no cuenta con la aplicacion Apklis instalada.", Toast.LENGTH_LONG).show();
+		case "result02":
+			Toast.makeText(this, "No se encuentra autenticado en Apklis.", Toast.LENGTH_LONG).show();
+		case "result03":
+			Toast.makeText(this, "Usted no ha comprado la aplicación en Apklis.", Toast.LENGTH_LONG).show();
+		case "result04":
+			Toast.makeText(this, "Compra verificada en Apklis.", Toast.LENGTH_LONG).show();
+		default:
+			Toast.makeText(this, "Puede continuar", Toast.LENGTH_LONG).show();
+    }
 ```
 ### Contributing
 All contributions are welcome!!!
