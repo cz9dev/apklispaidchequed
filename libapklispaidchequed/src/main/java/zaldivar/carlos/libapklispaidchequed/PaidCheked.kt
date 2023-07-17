@@ -32,13 +32,13 @@ class PaidCheked {
                 val cursor =
                     contentResolver.query(providerURI, null, null, null, null)
                         ?: return "result01"  //
-                cursor?.let {
+                cursor.let {
                     if (it.moveToFirst()) {
-                        Log.d(TAG, "Cheked: " + it.getString(it.getColumnIndex(APKLIS_USER_NAME)))
-                        if (it.getString(it.getColumnIndex(APKLIS_USER_NAME)) == null) {
+                        var indexUser = it.getColumnIndex(APKLIS_USER_NAME)
+                        if (it.getString(indexUser) == null) {
                             return "result02" // Si no estas autenticado en Apklis
                         }
-                        return if (it.getInt(it.getColumnIndex(APKLIS_PAID)) > 0) {
+                        return if (it.getInt(indexUser) > 0) {
                             "result04" // Si se ha comprado la apk en Apklis
                         } else {
                             "result03" // Si no se ha comprado la aplicación en Apklis
