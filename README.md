@@ -45,6 +45,14 @@ allprojects {
             Toast.makeText(this, "Puede continuar", Toast.LENGTH_LONG).show();
     }
 ```
+
+* Check has update App Kotlin
+```kotlin
+    var versionCode = BuildConfig.VERSION_CODE
+    val updateCheked = UpdateCheked(versionCode, PAKAGE_ID)
+    updateCheked.start()
+```
+
 ### Contributing
 All contributions are welcome!!!
 
