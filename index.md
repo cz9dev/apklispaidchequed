@@ -53,6 +53,20 @@ String paidCheked = PaidCheked.Companion.isPurchased(this, PACKAGE_ID);
     }
 ```
 
+
+* Check has update App Kotlin
+```kotlin
+    var versionCode = BuildConfig.VERSION_CODE
+    val updateCheked = UpdateCheked(versionCode, PAKAGE_ID)
+    updateCheked.start()
+    
+    updateCheked.result.observe(this){hasUpdate ->
+        if (hasUpdate.update_exist)
+        // TODO: Implementas tu código para si hay actualización en Apklist
+        Toast.makeText(this, "Actualiza tu Apps a la version: ${hasUpdate.version_name}", Toast.LENGTH_SHORT).show()
+    }
+```
+
 ### Contributing
 
 All contributions are welcome!!!
