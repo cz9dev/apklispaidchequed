@@ -53,7 +53,6 @@ String paidCheked = PaidCheked.Companion.isPurchased(this, PACKAGE_ID);
     }
 ```
 
-
 * Check has update App Kotlin
 ```kotlin
     var versionCode = BuildConfig.VERSION_CODE
